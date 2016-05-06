@@ -1,0 +1,46 @@
+Nicholas Ruta  
+LSM Tree - Scripts   
+05/06/16
+
+HOW TO RUN THE SCRIPTS FOR THE LSM TREE DESIGN:
+
+These scripts are set up to display functionality of the LSM Tree. Each of them was compiled on a Mac using Xcode. Run the script from the command line / terminal to see output of the LSM Tree’s process for each particular test. 
+
+
+
+INSERTS UP TO C1 & C5 LEVELS -
+
+Shows 20,000 inserts up to the c1 level
+COMMAND TO RUN FROM TERMINAL - ./insertsUpToC1
+
+Shows 20,000 inserts up the c5 level for a speed comparison to the previous up to c1 
+COMMAND TO RUN FROM TERMINAL - ./insertsUpToC5
+
+
+
+
+
+FINDING THE BEST NODE SIZE - 
+
+500,000 Inserts using a node size of 5
+COMMAND TO RUN FROM TERMINAL - ./insertsM5
+
+500,000 Inserts using a node size of 20
+COMMAND TO RUN FROM TERMINAL - ./insertsM20
+
+500,000 Inserts using a node size of 40
+COMMAND TO RUN FROM TERMINAL - ./insertsM40
+
+
+
+
+
+SHOWING A CONCURRENT PROGRAM THAT SCALES WITH NUMBER OF CORES/THREADS
+
+Shows 20,000 inserts using a worker queue and thread pool using 2 threads
+./parallelProgramReads2threads
+
+Shows 20,000 inserts using a worker queue and thread pool using 4 threads./parallelProgramReads4threads
+
+
+Shows 20,000 inserts using a worker queue and thread pool using 8 threads./parallelProgramReads8threads
